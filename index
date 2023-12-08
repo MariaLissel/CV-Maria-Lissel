@@ -10,9 +10,39 @@
 </head>
 
 <body>
-    2011 - 2016
-    Kommunikationsdesign Hochschule für angewandte Wissenschaften Würzburg
-    Bachelor of Arts - Animation
+    <header>
+        <h1>CV Maria Lissel</h1>
+    </header>
+    ><main>
+        <article>
+            <h2>profile</h2>
+        </article>
+        <article>
+            <h2>experiences</h2>
+            <ul>
+                <li>
+                    <hh3>Design, Animation</hh3>
+                </li>
+                <li>
+                    <hh3>Modelmaker, SFX, Propmaking</hh3>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>skills</h2>
+            <section>
+                <h3>soft skills</h3>
+            </section>
+            <section>
+                <h3>technical skills</h3>
+            </section>
+        </article>
+        <article>
+            <h>contact</h>
+        </article>
+
+
+    </main>
 
 </body>
 
