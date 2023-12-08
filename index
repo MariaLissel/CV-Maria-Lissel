@@ -20,10 +20,10 @@
         <article>
             <h2>experiences</h2>
             <section>
-                <hh3>Design, Animation</hh3>
+                <h3>Design, Animation</h3>
             </section>
             <section>
-                <hh3>Modelmaker, SFX, Propmaking</hh3>
+                <h3>Modelmaker, SFX, Propmaking</h3>
             </section>
         </article>
         <article>
@@ -36,7 +36,7 @@
             </section>
         </article>
         <article>
-            <h>contact</h>
+            <h2>contact</h2>
         </article>
 
 
