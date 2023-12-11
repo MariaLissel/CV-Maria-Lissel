@@ -54,15 +54,35 @@
                 <h2>skills</h2>
                 <section>
                     <h3>soft skills</h3>
+
+                    <ul>
+                        <li>time management</li>
+                        <li>teamwork</li>
+                        <li>creativity</li>
+                    </ul>
+
                 </section>
 
                 <section>
                     <h3>technical skills</h3>
+
+                    <ul>
+                        <li>HMTL</li>
+                        <li>After Effects</li>
+                        <li>CSS soon</li>
+                    </ul>
+
                 </section>
             </article>
 
             <article id="contact">
                 <h2>contact</h2>
+
+                <ol type="A">
+                    <li> <a href="hello@maria-lissel.de">Email</a> </li>
+                    <li>phone</li>
+                </ol>
+
             </article>
 
 
