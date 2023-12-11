@@ -9,7 +9,7 @@ body {
 }
 
 * {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 h1,
@@ -19,6 +19,14 @@ h4,
 h5,
 h6 {
   font-family: "Raleway";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: lightsalmon
 }
 
 /* Specific */
