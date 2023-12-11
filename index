@@ -7,11 +7,12 @@
     <meta author="Maria Lisse">
     <title>CV Maria Lissel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="header-style">
         <h1>CV Maria Lissel</h1>
         <p>Bachelor of Arts and future <strong>front-end web developer</strong></p>
 
@@ -22,13 +23,14 @@
 
     </header>
 
-    <main>
+    <main class="main-style">
         <article id="contact">
             <h2>profile</h2>
             <p>Hey my name is Maria and I am a ex-motion designer and front-end developer-noobie with a particular
                 interest in Accessibility.</p>
         </article>
 
+        <br>
 
         <article=id="experiences">
             <h2>experiences</h2>
@@ -40,15 +42,18 @@
                 <p>mostly for documentary film and TV productions</p>
             </section>
 
+            <br>
+
             <section>
                 <header>
-                    <h3>Modelmaker, <abbr>SFX</abbr> (special effect), Propmaking</h3>
+                    <h3>Modelmaker, <abbr>SFX (special effects) </abbr> (special effect), Propmaking</h3>
                     <p>2016-2019</p>
                 </header>
                 <p>worked on <i>Isle of dogs</i> a stop motion film by Wes Anderson</p>
             </section>
             </article>
 
+            <br>
 
             <article id="skills">
                 <h2>skills</h2>
@@ -74,6 +79,8 @@
 
                 </section>
             </article>
+
+            <br>
 
             <article id="contact">
                 <h2>contact</h2>
