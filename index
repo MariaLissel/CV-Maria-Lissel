@@ -18,8 +18,8 @@
 
         <a href="#profile">profile</a> <br>
         <a href="#experiences">experiences</a> <br>
-        <a href="skills">skills</a> <br>
-        <a href="contact">contact</a> <br>
+        <a href="#skills">skills</a> <br>
+        <a href="#contact">contact</a> <br>
 
     </header>
 
@@ -32,7 +32,7 @@
 
         <br>
 
-        <article=id="experiences">
+        <article id="experiences">
             <h2>experiences</h2>
             <section>
                 <header>
@@ -46,51 +46,51 @@
 
             <section>
                 <header>
-                    <h3>Modelmaker, <abbr>SFX (special effects) </abbr> (special effect), Propmaking</h3>
+                    <h3>Modelmaker, <abbr>SFX</abbr> (special effects), Propmaking</h3>
                     <p>2016-2019</p>
                 </header>
                 <p>worked on <i>Isle of dogs</i> a stop motion film by Wes Anderson</p>
             </section>
-            </article>
+        </article>
 
-            <br>
+        <br>
 
-            <article id="skills">
-                <h2>skills</h2>
-                <section>
-                    <h3>soft skills</h3>
+        <article id="skills">
+            <h2>skills</h2>
+            <section>
+                <h3>soft skills</h3>
 
-                    <ul>
-                        <li>time management</li>
-                        <li>teamwork</li>
-                        <li>creativity</li>
-                    </ul>
+                <ul>
+                    <li>time management</li>
+                    <li>teamwork</li>
+                    <li>creativity</li>
+                </ul>
 
-                </section>
+            </section>
 
-                <section>
-                    <h3>technical skills</h3>
+            <section>
+                <h3>technical skills</h3>
 
-                    <ul>
-                        <li>HMTL</li>
-                        <li>After Effects</li>
-                        <li>CSS soon</li>
-                    </ul>
+                <ul>
+                    <li>HMTL</li>
+                    <li>After Effects</li>
+                    <li>CSS soon</li>
+                </ul>
 
-                </section>
-            </article>
+            </section>
+        </article>
 
-            <br>
+        <br>
 
-            <article id="contact">
-                <h2>contact</h2>
+        <article id="contact">
+            <h2>contact</h2>
 
-                <ol type="A">
-                    <li> <a href="hello@maria-lissel.de">Email</a> </li>
-                    <li>phone</li>
-                </ol>
+            <ol type="A">
+                <li> <a href="mailto:hello@maria-lissel.de">Email</a> </li>
+                <li>phone</li>
+            </ol>
 
-            </article>
+        </article>
 
 
     </main>
