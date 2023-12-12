@@ -12,6 +12,8 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+/* headings */
+
 h1,
 h2,
 h3,
@@ -33,8 +35,23 @@ h1 {
   color: Teal;
 }
 
+/* Class für Emoji Aufgabe */
+
+.Emoji::after {
+  content: " ⚙️";
+}
+
+/* selection style*/
+
+::selection {
+  background-color: #deb8b8c7;
+  color: Teal;
+}
+
+/* article Blöcke Abstand */
+
 article + article {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 /* Links */
@@ -64,6 +81,7 @@ a:active {
 /* border lines verschieben? */
 
 main article {
+  padding: 50px;
   border-bottom: 2px solid #deb8b8c7;
 }
 
