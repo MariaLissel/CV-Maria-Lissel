@@ -12,7 +12,6 @@ html {
   font-family: "Playfair Display", serif;
 }
 
-
 /* headings ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 h1,
@@ -90,6 +89,7 @@ main article {
 
 .header-style {
   padding: 48px 16px;
+  padding-top: 50px;
   text-align: center;
   background-color: #deb8b8c7;
 }
@@ -98,4 +98,33 @@ main article {
 
 header > a {
   margin: 20px;
+}
+
+/* header und subheader in einer Linie */
+
+.experiences-header-one {
+  display: inline-block;
+}
+
+.experiences-header-two {
+  display: inline-block;
+}
+
+/* main article headings position to the left */
+
+.article-headings {
+  position: relative;
+  left: -10px;
+}
+
+/* hire me button */
+
+aside {
+  color: #deb8b8c7;
+  background-color: Teal;
+  font-family: "Raleway";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
 }
