@@ -1,4 +1,4 @@
-/* General */
+/* General ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 * {
   box-sizing: border-box;
@@ -8,11 +8,12 @@ body {
   margin: 0px;
 }
 
-* {
+html {
   font-family: "Playfair Display", serif;
 }
 
-/* headings */
+
+/* headings ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 h1,
 h2,
@@ -35,6 +36,26 @@ h1 {
   color: Teal;
 }
 
+/* Links ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+a:link {
+  color: Teal;
+}
+
+a:visited {
+  color: OrangeRed;
+}
+
+a:hover {
+  color: OrangeRed;
+}
+
+a:active {
+  background-color: DarkSlateGray;
+}
+
+/* Specific  ////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* Class für Emoji Aufgabe */
 
 .Emoji::after {
@@ -54,31 +75,11 @@ article + article {
   margin-top: 20px;
 }
 
-/* Links */
-
-a:link {
-  color: Teal;
-}
-
-a:visited {
-  color: OrangeRed;
-}
-
-a:hover {
-  color: OrangeRed;
-}
-
-a:active {
-  background-color: DarkSlateGray;
-}
-
-/* Specific */
-
 .main-style {
   padding: 20px;
 }
 
-/* border lines verschieben? */
+/* Unterbrechungslinien */
 
 main article {
   padding: 50px;
