@@ -5,11 +5,12 @@
 }
 
 body {
-  margin: 0px;
+  margin: 0rem;
 }
 
 html {
   font-family: "Playfair Display", serif;
+  font-size: 1rem;
 }
 
 /* headings ////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -57,7 +58,7 @@ a:active {
 
 /* Class für Emoji Aufgabe */
 
-.Emoji::after {
+.profession::after {
   content: " ⚙️";
 }
 
@@ -71,25 +72,25 @@ a:active {
 /* article Blöcke Abstand */
 
 article + article {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .main-style {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 /* Unterbrechungslinien */
 
 main article {
-  padding: 50px;
-  border-bottom: 2px solid #deb8b8c7;
+  padding: 3rem;
+  border-bottom: 0.1rem solid #deb8b8c7;
 }
 
 /* header */
 
 .header-style {
-  padding: 48px 16px;
-  padding-top: 50px;
+  padding: 3rem 1rem;
+  padding-top: 3.1rem;
   text-align: center;
   background-color: #deb8b8c7;
 }
@@ -97,7 +98,7 @@ main article {
 /* Links im Header weiter auseinandern */
 
 header > a {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 /* header und subheader in einer Linie */
@@ -114,7 +115,7 @@ header > a {
 
 .article-headings {
   position: relative;
-  left: -10px;
+  left: -0.8rem;
 }
 
 /* hire me button */
@@ -124,7 +125,29 @@ aside {
   background-color: Teal;
   font-family: "Raleway";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  padding: 10px;
+  top: 0rem;
+  right: 0rem;
+  padding: 0.8rem;
+}
+
+/* Give that enclosing element a rem based font size (it should be big) */
+.h1-and-profession {
+  font-size: 4rem;
+}
+
+/* The title (<h1>) should have the same size as the parent element */
+h1 {
+  font-size: 1em;
+}
+
+/* The profession (<p>) should be 25% of the size */
+
+.profession {
+  font-size: 25%;
+}
+
+/* Use the ch unit to limit the max-width of the main content */
+
+.main-style {
+  max-width: 70ch;
 }
