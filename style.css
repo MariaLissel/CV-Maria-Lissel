@@ -11,6 +11,7 @@ body {
 html {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* headings ////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -84,6 +85,10 @@ article + article {
 main article {
   padding: 3rem;
   border-bottom: 0.1rem solid #deb8b8c7;
+}
+
+main article:last-child {
+  border-bottom: none;
 }
 
 /* header */
@@ -179,7 +184,7 @@ html {
 
 /* Hide the navigation and "Hire Me" badge for printers */
 
-@media printers {
+@media print {
   a,
   aside {
     display: none;
@@ -191,5 +196,51 @@ html {
 @media screen and (min-width: 786px) {
   main > article {
     margin: 4rem;
+  }
+}
+
+/* Use a flexbox for the navigation in the site header and Display all navigation links vertically by default */
+
+a {
+  /* zu spät um den Links eine Klasse zu geben aber eigentlich: Links in nav container und class */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Starting with the medium breakpoint (768px) display the navigations links horizontally */
+
+@media screen and (min-width: 768px) {
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+/* Display the job title and the time span vertically by default */
+
+.experiences-header-one,
+.experiences-header-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Beginning with the medium breakpoint display the job title on the left side and the time span on the right side */
+
+@media screen and (min-width: 768px) {
+  .experiences-header-one {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .experiences-header-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
