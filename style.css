@@ -39,19 +39,19 @@ h1 {
 
 /* Links ////////////////////////////////////////////////////////////////////////////////////////////// */
 
-a:link {
+.navigation:link {
   color: Teal;
 }
 
-a:visited {
-  color: OrangeRed;
+.navigation:visited {
+  color: wheat;
 }
 
-a:hover {
-  color: OrangeRed;
+.navigation:hover {
+  color: wheat;
 }
 
-a:active {
+.navigation:active {
   background-color: DarkSlateGray;
 }
 
@@ -97,22 +97,30 @@ main article:last-child {
   padding: 3rem 1rem;
   padding-top: 3.1rem;
   text-align: center;
+  background-image: linear-gradient(10deg, #deb8b8c7, wheat);
   background-color: #deb8b8c7;
+}
+
+.footer-style {
+  background-image: linear-gradient(#deb8b8c7, wheat);
+  padding: 2rem;
 }
 
 /* Links im Header weiter auseinandern */
 
-header > a {
-  margin: 1.25rem;
+header > .navigation {
+  margin: 0.4 rem;
 }
 
 /* header und subheader in einer Linie */
 
-.experiences-header-one {
+_.experiences-header-one {
+  color: red;
   display: inline-block;
 }
 
-.experiences-header-two {
+_.experiences-header-two {
+  color: red;
   display: inline-block;
 }
 
@@ -154,7 +162,7 @@ h1 {
 /* Use the ch unit to limit the max-width of the main content */
 
 .main-style {
-  max-width: 70ch;
+  max-width: 80ch;
 }
 
 /* Introduce breakpoints for medium and large screens */
@@ -185,7 +193,7 @@ html {
 /* Hide the navigation and "Hire Me" badge for printers */
 
 @media print {
-  a,
+  .navigation,
   aside {
     display: none;
   }
@@ -201,46 +209,40 @@ html {
 
 /* Use a flexbox for the navigation in the site header and Display all navigation links vertically by default */
 
-a {
-  /* zu spät um den Links eine Klasse zu geben aber eigentlich: Links in nav container und class */
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-/* Starting with the medium breakpoint (768px) display the navigations links horizontally */
-
-@media screen and (min-width: 768px) {
-  a {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-
-/* Display the job title and the time span vertically by default */
-
-.experiences-header-one,
-.experiences-header-two {
+.navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Beginning with the medium breakpoint display the job title on the left side and the time span on the right side */
+/* Starting with the medium breakpoint (768px) display the navigations links horizontally */
 
 @media screen and (min-width: 768px) {
-  .experiences-header-one {
+  .navigation {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
   }
 }
 
+.nav-link {
+  padding: 0.5rem;
+}
+
+/* Display the job title and the time span vertically by default */
+
+__.experiences-header-one,
+.experiences-header-two {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Beginning with the medium breakpoint display the job title on the left side and the time span on the right side */
+
 @media screen and (min-width: 768px) {
-  .experiences-header-one {
+  .experiences-header-one-and-two {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }
