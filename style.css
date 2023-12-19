@@ -14,6 +14,14 @@ html {
   line-height: 1.5rem;
 }
 
+/* Replace all your colors with custom properties */
+
+html {
+  --main-color: Teal;
+  --bright-color: wheat;
+  --pink-color: #deb8b8c7;
+}
+
 /* headings ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 h1,
@@ -30,25 +38,25 @@ h3,
 h4,
 h5,
 h6 {
-  color: Teal;
+  color: var(--main-color);
 }
 
 h1 {
-  color: Teal;
+  color: var(--main-color);
 }
 
 /* Links ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .navigation:link {
-  color: Teal;
+  color: var(--main-color);
 }
 
 .navigation:visited {
-  color: wheat;
+  color: var(--bright-color);
 }
 
 .navigation:hover {
-  color: wheat;
+  color: var(--bright-color);
 }
 
 .navigation:active {
@@ -66,8 +74,8 @@ h1 {
 /* selection style*/
 
 ::selection {
-  background-color: #deb8b8c7;
-  color: Teal;
+  background-color: var(--pink-color);
+  color: var(--bright-color);
 }
 
 /* article Blöcke Abstand */
@@ -84,7 +92,7 @@ article + article {
 
 main article {
   padding: 3rem;
-  border-bottom: 0.1rem solid #deb8b8c7;
+  border-bottom: 0.1rem solid var(--pink-color);
 }
 
 main article:last-child {
@@ -97,12 +105,16 @@ main article:last-child {
   padding: 3rem 1rem;
   padding-top: 3.1rem;
   text-align: center;
-  background-image: linear-gradient(10deg, #deb8b8c7, wheat);
-  background-color: #deb8b8c7;
+  background-image: linear-gradient(
+    10deg,
+    var(--pink-color),
+    var(--bright-color)
+  );
+  background-color: var(--pink-color);
 }
 
 .footer-style {
-  background-image: linear-gradient(#deb8b8c7, wheat);
+  background-image: linear-gradient(var(--pink-color), var(--bright-color));
   padding: 2rem;
 }
 
@@ -134,8 +146,8 @@ _.experiences-header-two {
 /* hire me button */
 
 aside {
-  color: #deb8b8c7;
-  background-color: Teal;
+  color: var(--pink-color);
+  background-color: var(--main-color);
   font-family: "Raleway";
   position: absolute; /* hier sollst du sein Button */
   top: 0rem;
@@ -162,7 +174,7 @@ h1 {
 /* Use the ch unit to limit the max-width of the main content */
 
 .main-style {
-  max-width: 80ch;
+  max-width: 100ch;
 }
 
 /* Introduce breakpoints for medium and large screens */
